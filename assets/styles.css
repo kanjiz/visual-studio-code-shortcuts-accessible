@@ -1,0 +1,274 @@
+:root {
+    /* ダークテーマ（デフォルト） - 高コントラスト */
+    --bg-color: #000000;
+    --text-color: #ffffff;
+    --header-bg: #ffffff;
+    --header-text: #000000;
+    --border-color: #666666;
+    --section-bg: #1a1a1a;
+    --code-bg: #333333;
+    --code-color: #00ff00;
+    --hover-bg: #333333;
+    --focus-color: #ffff00;
+}
+
+[data-theme="light"] {
+    /* ライトテーマ - 高コントラスト */
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --header-bg: #000000;
+    --header-text: #ffffff;
+    --border-color: #000000;
+    --section-bg: #f0f0f0;
+    --code-bg: #ffffff;
+    --code-color: #000000;
+    --hover-bg: #f8f8f8;
+    --focus-color: #ff0000;
+}
+
+/* スキップリンク */
+.skip-links {
+    position: relative;
+    z-index: 1000;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: var(--focus-color);
+    color: var(--bg-color);
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: top 0.3s;
+    border: 2px solid var(--bg-color);
+}
+
+.skip-link:focus {
+    top: 6px;
+    outline: 3px solid var(--bg-color);
+    outline-offset: 2px;
+}
+
+.skip-link:hover {
+    background: var(--bg-color);
+    color: var(--focus-color);
+    border: 2px solid var(--focus-color);
+}
+
+/* 複数のスキップリンクを横に並べる */
+.skip-links .skip-link:nth-child(2) { left: 200px; }
+.skip-links .skip-link:nth-child(3) { left: 400px; }
+.skip-links .skip-link:nth-child(4) { left: 600px; }
+.skip-links .skip-link:nth-child(5) { left: 850px; }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "BIZ UDGothic", "Yu Gothic", "Hiragino Sans", "Segoe UI", Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.8;
+    transition: all 0.3s ease;
+    min-height: 100vh;
+    padding: 24px;
+    font-size: 24px;
+}
+
+header {
+    background: var(--header-bg);
+    color: var(--header-text);
+    padding: 32px 40px;
+    margin-bottom: 32px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid var(--border-color);
+}
+
+header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.theme-toggle {
+    background: var(--bg-color);
+    border: 3px solid var(--border-color);
+    color: var(--text-color);
+    padding: 20px 32px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    min-width: 180px;
+}
+
+.theme-toggle:hover {
+    background: var(--hover-bg);
+    border-color: var(--focus-color);
+}
+
+.theme-toggle:focus {
+    outline: 4px solid var(--focus-color);
+    outline-offset: 4px;
+    background: var(--hover-bg);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.category {
+    background: var(--section-bg);
+    border-radius: 8px;
+    padding: 32px;
+    border: 3px solid var(--border-color);
+}
+
+.category-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 4px solid var(--border-color);
+}
+
+.shortcut-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+}
+
+.shortcut-row {
+    transition: all 0.2s ease;
+    border: 2px solid transparent;
+    border-radius: 8px;
+}
+
+.shortcut-row:hover {
+    background-color: var(--hover-bg);
+    border-color: var(--border-color);
+}
+
+.shortcut-row:focus {
+    background-color: var(--hover-bg);
+    outline: 4px solid var(--focus-color);
+    outline-offset: 2px;
+    border-color: var(--focus-color);
+}
+
+.shortcut-key {
+    font-family: "BIZ UDGothic", "Consolas", "SF Mono", "Monaco", monospace;
+    font-size: 24px;
+    font-weight: bold;
+    background: var(--code-bg);
+    color: var(--code-color);
+    padding: 16px 20px;
+    border-radius: 8px;
+    white-space: nowrap;
+    width: 40%;
+    vertical-align: top;
+    border: 2px solid var(--border-color);
+}
+
+.shortcut-desc {
+    font-size: 24px;
+    padding: 16px 20px;
+    width: 60%;
+    vertical-align: top;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 24px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    border-top: 3px solid var(--border-color);
+    background: var(--section-bg);
+    border-radius: 8px;
+}
+
+/* フォーカス管理の改善 */
+.shortcut-row[tabindex="0"] {
+    cursor: pointer;
+    position: relative;
+}
+
+.shortcut-row[tabindex="0"]:focus {
+    z-index: 1;
+}
+
+/* 印刷時の最適化 */
+@media print {
+    body {
+        background: white;
+        color: black;
+        font-size: 12px;
+    }
+
+    .theme-toggle {
+        display: none;
+    }
+
+    .category {
+        break-inside: avoid;
+        border: 2px solid black;
+        margin-bottom: 20px;
+    }
+
+    .shortcut-key {
+        background: #f0f0f0;
+        color: black;
+        border: 1px solid black;
+    }
+
+    .category-title {
+        color: black;
+        border-bottom-color: black;
+    }
+}
+
+/* 高コントラストモード対応 */
+@media (prefers-contrast: high) {
+    :root {
+        --border-color: #ffffff;
+        --focus-color: #ffff00;
+    }
+
+    [data-theme="light"] {
+        --border-color: #000000;
+        --focus-color: #ff0000;
+    }
+}
+
+/* 動きを抑制する設定 */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
