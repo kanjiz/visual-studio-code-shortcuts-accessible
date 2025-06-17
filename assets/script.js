@@ -55,21 +55,23 @@ document.addEventListener('keydown', function (e) {
         // 次のセクションに移動
         if (e.key === 'ArrowRight' && currentSection < sections.length - 1) {
             const nextSection = sections[currentSection + 1];
-            const firstFocusable = nextSection.querySelector('.shortcut-row[tabindex="0"]');
+            // 全般セクション用とその他セクション用の両方に対応
+            const firstFocusable = nextSection.querySelector('.shortcut-item[tabindex="0"], .shortcut-row[tabindex="0"]');
             if (firstFocusable) firstFocusable.focus();
         } else if (e.key === 'ArrowLeft' && currentSection > 0) {
             const prevSection = sections[currentSection - 1];
-            const firstFocusable = prevSection.querySelector('.shortcut-row[tabindex="0"]');
+            const firstFocusable = prevSection.querySelector('.shortcut-item[tabindex="0"], .shortcut-row[tabindex="0"]');
             if (firstFocusable) firstFocusable.focus();
         }
     }
 
     // セクション内での上下移動
     if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
-        if (focusedElement.classList.contains('shortcut-row')) {
+        if (focusedElement.classList.contains('shortcut-row') || focusedElement.classList.contains('shortcut-item')) {
             e.preventDefault();
             const currentSection = focusedElement.closest('.category');
-            const rows = currentSection.querySelectorAll('.shortcut-row[tabindex="0"]');
+            // 両方の構造に対応
+            const rows = currentSection.querySelectorAll('.shortcut-row[tabindex="0"], .shortcut-item[tabindex="0"]');
             const currentIndex = Array.from(rows).indexOf(focusedElement);
 
             if (e.key === 'ArrowDown' && currentIndex < rows.length - 1) {

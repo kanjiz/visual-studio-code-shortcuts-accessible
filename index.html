@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visual Studio Code (VS Code) キーボードショートカット一覧</title>
+    <title>Visual Studio Code キーボードショートカット一覧（Windows版）</title>
     <!-- BIZ UDゴシック フォントの読み込み -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,15 +18,14 @@
     <div class="skip-links">
         <a href="#main-content" class="skip-link">メインコンテンツにスキップ</a>
         <a href="#category-general" class="skip-link">全般セクションにスキップ</a>
-        <a href="#category-editing" class="skip-link">編集セクションにスキップ</a>
+        <a href="#category-editing" class="skip-link">基本的な編集セクションにスキップ</a>
         <a href="#category-navigation" class="skip-link">ナビゲーションセクションにスキップ</a>
-        <a href="#category-search" class="skip-link">検索セクションにスキップ</a>
+        <a href="#category-search" class="skip-link">検索と置換セクションにスキップ</a>
     </div>
 
     <header>
         <div>
-            <h1>Visual Studio Code (VS Code)</h1>
-            <p>Windows キーボードショートカット一覧</p>
+            <h1>Visual Studio Code<br>キーボードショートカット一覧（Windows版）</h1>
         </div>
         <button class="theme-toggle" onclick="toggleTheme()" aria-label="ライトモードに切り替え" id="themeButton">
             ライトモード
@@ -37,423 +36,567 @@
         <!-- 全般 -->
         <section class="category" id="category-general">
             <h2 class="category-title">全般</h2>
-            <table class="shortcut-table" role="table" aria-label="全般のショートカット">
-                <tbody>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール シフト ピー またはF1でコマンドパレットを表示">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>, <kbd>F1</kbd></td>
-                        <td class="shortcut-desc">コマンドパレットを表示</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール ピーでクイックオープン、ファイルに移動">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>P</kbd></td>
-                        <td class="shortcut-desc">クイックオープン、ファイルに移動</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール シフト エヌで新しいウィンドウまたはインスタンス">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd></td>
-                        <td class="shortcut-desc">新しいウィンドウ/インスタンス</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール シフト ダブリューでウィンドウまたはインスタンスを閉じる">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>W</kbd></td>
-                        <td class="shortcut-desc">ウィンドウ/インスタンスを閉じる</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール カンマでユーザー設定">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>,</kbd></td>
-                        <td class="shortcut-desc">ユーザー設定</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール ケー コントロール エスでキーボードショートカット">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>K Ctrl</kbd>+<kbd>S</kbd></td>
-                        <td class="shortcut-desc">キーボードショートカット</td>
-                    </tr>
-                </tbody>
-            </table>
+            <dl class="shortcut-list flex-layout" aria-label="全般のショートカット">
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>, <kbd>F1</kbd></dt>
+                    <dd class="shortcut-desc">コマンドパレットを表示</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>P</kbd></dt>
+                    <dd class="shortcut-desc">クイックオープン、ファイルに移動</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd></dt>
+                    <dd class="shortcut-desc">新しいウィンドウ/インスタンス</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>W</kbd></dt>
+                    <dd class="shortcut-desc">ウィンドウ/インスタンスを閉じる</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>,</kbd></dt>
+                    <dd class="shortcut-desc">ユーザー設定</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>Ctrl</kbd>+<kbd>S</kbd></dt>
+                    <dd class="shortcut-desc">キーボードショートカット</dd>
+                </div>
+            </dl>
         </section>
 
         <!-- 基本的な編集 -->
         <section class="category" id="category-editing">
             <h2 class="category-title">基本的な編集</h2>
-            <table class="shortcut-table" role="table" aria-label="基本的な編集のショートカット">
-                <tbody>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール エックスで行を切り取り（選択範囲が空の場合）">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>X</kbd></td>
-                        <td class="shortcut-desc">行を切り取り（選択範囲が空の場合）</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール シーで行をコピー（選択範囲が空の場合）">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>C</kbd></td>
-                        <td class="shortcut-desc">行をコピー（選択範囲が空の場合）</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="オルト 上矢印または下矢印で行を上または下に移動">
-                        <td class="shortcut-key"><kbd>Alt</kbd>+<kbd>↑</kbd> / <kbd>↓</kbd></td>
-                        <td class="shortcut-desc">行を上/下に移動</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="シフト オルト 下矢印または上矢印で行を上または下にコピー">
-                        <td class="shortcut-key"><kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>↓</kbd> / <kbd>↑</kbd></td>
-                        <td class="shortcut-desc">行を上/下にコピー</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール シフト ケーで行を削除">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd></td>
-                        <td class="shortcut-desc">行を削除</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール エンターで下に行を挿入">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Enter</kbd></td>
-                        <td class="shortcut-desc">下に行を挿入</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール シフト エンターで上に行を挿入">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd></td>
-                        <td class="shortcut-desc">上に行を挿入</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール シフト バックスラッシュで対応する括弧にジャンプ">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>\</kbd></td>
-                        <td class="shortcut-desc">対応する括弧にジャンプ</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール 右角括弧または左角括弧で行をインデントまたはアウトデント">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>]</kbd> / <kbd>[</kbd></td>
-                        <td class="shortcut-desc">行をインデント/アウトデント</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="ホームまたはエンドで行の先頭または末尾に移動">
-                        <td class="shortcut-key"><kbd>Home</kbd> / <kbd>End</kbd></td>
-                        <td class="shortcut-desc">行の先頭/末尾に移動</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール ホームでファイルの先頭に移動">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Home</kbd></td>
-                        <td class="shortcut-desc">ファイルの先頭に移動</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール エンドでファイルの末尾に移動">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>End</kbd></td>
-                        <td class="shortcut-desc">ファイルの末尾に移動</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール 上矢印または下矢印で行を上または下にスクロール">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>↑</kbd> / <kbd>↓</kbd></td>
-                        <td class="shortcut-desc">行を上/下にスクロール</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="オルト ページアップまたはページダウンでページを上または下にスクロール">
-                        <td class="shortcut-key"><kbd>Alt</kbd>+<kbd>PgUp</kbd> / <kbd>PgDn</kbd></td>
-                        <td class="shortcut-desc">ページを上/下にスクロール</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール シフト 左角括弧で領域を折りたたみ">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>[</kbd></td>
-                        <td class="shortcut-desc">領域を折りたたみ</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール シフト 右角括弧で領域を展開">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>]</kbd></td>
-                        <td class="shortcut-desc">領域を展開</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール ケー コントロール 左角括弧ですべてのサブ領域を折りたたみ">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>K Ctrl</kbd>+<kbd>[</kbd></td>
-                        <td class="shortcut-desc">すべてのサブ領域を折りたたみ</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール ケー コントロール 右角括弧ですべてのサブ領域を展開">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>K Ctrl</kbd>+<kbd>]</kbd></td>
-                        <td class="shortcut-desc">すべてのサブ領域を展開</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール ケー コントロール ゼロですべての領域を折りたたみ">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>K Ctrl</kbd>+<kbd>0</kbd></td>
-                        <td class="shortcut-desc">すべての領域を折りたたみ</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール ケー コントロール ジェーですべての領域を展開">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>K Ctrl</kbd>+<kbd>J</kbd></td>
-                        <td class="shortcut-desc">すべての領域を展開</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール ケー コントロール シーで行コメントを追加">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>K Ctrl</kbd>+<kbd>C</kbd></td>
-                        <td class="shortcut-desc">行コメントを追加</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール ケー コントロール ユーで行コメントを削除">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>K Ctrl</kbd>+<kbd>U</kbd></td>
-                        <td class="shortcut-desc">行コメントを削除</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール スラッシュで行コメントを切り替え">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>/</kbd></td>
-                        <td class="shortcut-desc">行コメントを切り替え</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="シフト オルト エーでブロックコメントを切り替え">
-                        <td class="shortcut-key"><kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>A</kbd></td>
-                        <td class="shortcut-desc">ブロックコメントを切り替え</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="オルト ゼットで単語の折り返しを切り替え">
-                        <td class="shortcut-key"><kbd>Alt</kbd>+<kbd>Z</kbd></td>
-                        <td class="shortcut-desc">単語の折り返しを切り替え</td>
-                    </tr>
-                </tbody>
-            </table>
+            <dl class="shortcut-list flex-layout" aria-label="基本的な編集のショートカット">
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>X</kbd></dt>
+                    <dd class="shortcut-desc">行を切り取り（選択範囲が空の場合）</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>C</kbd></dt>
+                    <dd class="shortcut-desc">行をコピー（選択範囲が空の場合）</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Alt</kbd>+<kbd>↑</kbd> / <kbd>↓</kbd></dt>
+                    <dd class="shortcut-desc">行を上/下に移動</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>↓</kbd> / <kbd>↑</kbd></dt>
+                    <dd class="shortcut-desc">行を上/下にコピー</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd></dt>
+                    <dd class="shortcut-desc">行を削除</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Enter</kbd></dt>
+                    <dd class="shortcut-desc">下に行を挿入</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd></dt>
+                    <dd class="shortcut-desc">上に行を挿入</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>\</kbd></dt>
+                    <dd class="shortcut-desc">対応する括弧にジャンプ</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>]</kbd> / <kbd>[</kbd></dt>
+                    <dd class="shortcut-desc">行をインデント/アウトデント</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Home</kbd> / <kbd>End</kbd></dt>
+                    <dd class="shortcut-desc">行の先頭/末尾に移動</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Home</kbd></dt>
+                    <dd class="shortcut-desc">ファイルの先頭に移動</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>End</kbd></dt>
+                    <dd class="shortcut-desc">ファイルの末尾に移動</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>↑</kbd> / <kbd>↓</kbd></dt>
+                    <dd class="shortcut-desc">行を上/下にスクロール</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Alt</kbd>+<kbd>PgUp</kbd> / <kbd>PgDn</kbd></dt>
+                    <dd class="shortcut-desc">ページを上/下にスクロール</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>[</kbd></dt>
+                    <dd class="shortcut-desc">領域を折りたたみ</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>]</kbd></dt>
+                    <dd class="shortcut-desc">領域を展開</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>Ctrl</kbd>+<kbd>[</kbd></dt>
+                    <dd class="shortcut-desc">すべてのサブ領域を折りたたみ</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>Ctrl</kbd>+<kbd>]</kbd></dt>
+                    <dd class="shortcut-desc">すべてのサブ領域を展開</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>Ctrl</kbd>+<kbd>0</kbd></dt>
+                    <dd class="shortcut-desc">すべての領域を折りたたみ</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>Ctrl</kbd>+<kbd>J</kbd></dt>
+                    <dd class="shortcut-desc">すべての領域を展開</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>Ctrl</kbd>+<kbd>C</kbd></dt>
+                    <dd class="shortcut-desc">行コメントを追加</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>Ctrl</kbd>+<kbd>U</kbd></dt>
+                    <dd class="shortcut-desc">行コメントを削除</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>/</kbd></dt>
+                    <dd class="shortcut-desc">行コメントを切り替え</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>A</kbd></dt>
+                    <dd class="shortcut-desc">ブロックコメントを切り替え</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Alt</kbd>+<kbd>Z</kbd></dt>
+                    <dd class="shortcut-desc">単語の折り返しを切り替え</dd>
+                </div>
+            </dl>
         </section>
 
         <!-- ナビゲーション -->
         <section class="category" id="category-navigation">
             <h2 class="category-title">ナビゲーション</h2>
-            <table class="shortcut-table" role="table" aria-label="ナビゲーションのショートカット">
-                <tbody>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール ティーですべてのシンボルを表示">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>T</kbd></td>
-                        <td class="shortcut-desc">すべてのシンボルを表示</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール ジーで行に移動">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>G</kbd></td>
-                        <td class="shortcut-desc">行に移動...</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール ピーでファイルに移動">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>P</kbd></td>
-                        <td class="shortcut-desc">ファイルに移動...</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール シフト オーでシンボルに移動">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>O</kbd></td>
-                        <td class="shortcut-desc">シンボルに移動...</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール シフト エムで問題パネルを表示">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd></td>
-                        <td class="shortcut-desc">問題パネルを表示</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="F8で次のエラーまたは警告に移動">
-                        <td class="shortcut-key"><kbd>F8</kbd></td>
-                        <td class="shortcut-desc">次のエラーまたは警告に移動</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="シフト F8で前のエラーまたは警告に移動">
-                        <td class="shortcut-key"><kbd>Shift</kbd>+<kbd>F8</kbd></td>
-                        <td class="shortcut-desc">前のエラーまたは警告に移動</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール シフト タブでエディターグループ履歴をナビゲート">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Tab</kbd></td>
-                        <td class="shortcut-desc">エディターグループ履歴をナビゲート</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="オルト 左矢印または右矢印で戻るまたは進む">
-                        <td class="shortcut-key"><kbd>Alt</kbd>+<kbd>←</kbd> / <kbd>→</kbd></td>
-                        <td class="shortcut-desc">戻る / 進む</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール エムでタブがフォーカスを移動することを切り替え">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>M</kbd></td>
-                        <td class="shortcut-desc">Tabがフォーカスを移動することを切り替え</td>
-                    </tr>
-                </tbody>
-            </table>
+            <dl class="shortcut-list flex-layout" aria-label="ナビゲーションのショートカット">
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>T</kbd></dt>
+                    <dd class="shortcut-desc">すべてのシンボルを表示</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>G</kbd></dt>
+                    <dd class="shortcut-desc">行に移動...</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>P</kbd></dt>
+                    <dd class="shortcut-desc">ファイルに移動...</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>O</kbd></dt>
+                    <dd class="shortcut-desc">シンボルに移動...</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd></dt>
+                    <dd class="shortcut-desc">問題パネルを表示</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>F8</kbd></dt>
+                    <dd class="shortcut-desc">次のエラーまたは警告に移動</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Shift</kbd>+<kbd>F8</kbd></dt>
+                    <dd class="shortcut-desc">前のエラーまたは警告に移動</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Tab</kbd></dt>
+                    <dd class="shortcut-desc">エディターグループ履歴をナビゲート</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Alt</kbd>+<kbd>←</kbd> / <kbd>→</kbd></dt>
+                    <dd class="shortcut-desc">戻る / 進む</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>M</kbd></dt>
+                    <dd class="shortcut-desc">Tabがフォーカスを移動することを切り替え</dd>
+                </div>
+            </dl>
         </section>
 
         <!-- 検索と置換 -->
         <section class="category" id="category-search">
             <h2 class="category-title">検索と置換</h2>
-            <table class="shortcut-table" role="table" aria-label="検索と置換のショートカット">
-                <tbody>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール エフで検索">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>F</kbd></td>
-                        <td class="shortcut-desc">検索</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール エイチで置換">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>H</kbd></td>
-                        <td class="shortcut-desc">置換</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="F3またはシフト F3で次を検索または前を検索">
-                        <td class="shortcut-key"><kbd>F3</kbd> / <kbd>Shift</kbd>+<kbd>F3</kbd></td>
-                        <td class="shortcut-desc">次を検索/前を検索</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="オルト エンターで検索一致のすべての出現箇所を選択">
-                        <td class="shortcut-key"><kbd>Alt</kbd>+<kbd>Enter</kbd></td>
-                        <td class="shortcut-desc">検索一致のすべての出現箇所を選択</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール ディーで次の検索一致に選択を追加">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>D</kbd></td>
-                        <td class="shortcut-desc">次の検索一致に選択を追加</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール ケー コントロール ディーで最後の選択を次の検索一致に移動">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>K Ctrl</kbd>+<kbd>D</kbd></td>
-                        <td class="shortcut-desc">最後の選択を次の検索一致に移動</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="オルト シー、アール、ダブリューで大文字小文字の区別、正規表現、単語全体を切り替え">
-                        <td class="shortcut-key"><kbd>Alt</kbd>+<kbd>C</kbd> / <kbd>R</kbd> / <kbd>W</kbd></td>
-                        <td class="shortcut-desc">大文字小文字の区別 / 正規表現 / 単語全体を切り替え</td>
-                    </tr>
-                </tbody>
-            </table>
+            <dl class="shortcut-list flex-layout" aria-label="検索と置換のショートカット">
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>F</kbd></dt>
+                    <dd class="shortcut-desc">検索</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>H</kbd></dt>
+                    <dd class="shortcut-desc">置換</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>F3</kbd> / <kbd>Shift</kbd>+<kbd>F3</kbd></dt>
+                    <dd class="shortcut-desc">次を検索/前を検索</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Alt</kbd>+<kbd>Enter</kbd></dt>
+                    <dd class="shortcut-desc">検索一致のすべての出現箇所を選択</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>D</kbd></dt>
+                    <dd class="shortcut-desc">次の検索一致に選択を追加</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>Ctrl</kbd>+<kbd>D</kbd></dt>
+                    <dd class="shortcut-desc">直前の選択を次の検索一致に移動</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Alt</kbd>+<kbd>C</kbd> / <kbd>R</kbd> / <kbd>W</kbd></dt>
+                    <dd class="shortcut-desc">大文字小文字の区別 / 正規表現 / 単語全体を切り替え</dd>
+                </div>
+            </dl>
         </section>
 
         <!-- マルチカーソルと選択 -->
-        <section class="category">
+        <section class="category" id="category-multicursor">
             <h2 class="category-title">マルチカーソルと選択</h2>
-            <table class="shortcut-table" role="table" aria-label="マルチカーソルと選択のショートカット">
-                <tbody>
-                    <tr class="shortcut-row" tabindex="0" aria-label="オルト クリックでカーソルを挿入">
-                        <td class="shortcut-key"><kbd>Alt</kbd>+<kbd>Click</kbd></td>
-                        <td class="shortcut-desc">カーソルを挿入</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール オルト 上矢印または下矢印で上または下にカーソルを挿入">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>↑</kbd> / <kbd>↓</kbd></td>
-                        <td class="shortcut-desc">上/下にカーソルを挿入</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール ユーで最後のカーソル操作を元に戻す">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>U</kbd></td>
-                        <td class="shortcut-desc">最後のカーソル操作を元に戻す</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="シフト オルト アイで選択した各行の末尾にカーソルを挿入">
-                        <td class="shortcut-key"><kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>I</kbd></td>
-                        <td class="shortcut-desc">選択した各行の末尾にカーソルを挿入</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール エルで現在の行を選択">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>L</kbd></td>
-                        <td class="shortcut-desc">現在の行を選択</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール シフト エルで現在の選択のすべての出現箇所を選択">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>L</kbd></td>
-                        <td class="shortcut-desc">現在の選択のすべての出現箇所を選択</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール F2で現在の単語のすべての出現箇所を選択">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>F2</kbd></td>
-                        <td class="shortcut-desc">現在の単語のすべての出現箇所を選択</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="シフト オルト 右矢印で選択を展開">
-                        <td class="shortcut-key"><kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>→</kbd></td>
-                        <td class="shortcut-desc">選択を展開</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="シフト オルト 左矢印で選択を縮小">
-                        <td class="shortcut-key"><kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>←</kbd></td>
-                        <td class="shortcut-desc">選択を縮小</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="シフト オルト マウスドラッグで列（ボックス）選択">
-                        <td class="shortcut-key"><kbd>Shift</kbd>+<kbd>Alt</kbd>+ (drag mouse)</td>
-                        <td class="shortcut-desc">列（ボックス）選択</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール シフト オルト 矢印キーで列（ボックス）選択">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Alt</kbd>+ (arrow key)</td>
-                        <td class="shortcut-desc">列（ボックス）選択</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール シフト オルト ページアップまたはページダウンで列（ボックス）選択ページアップまたはダウン">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>PgUp/PgDn</kbd></td>
-                        <td class="shortcut-desc">列（ボックス）選択ページアップ/ダウン</td>
-                    </tr>
-                </tbody>
-            </table>
+            <dl class="shortcut-list flex-layout" aria-label="マルチカーソルと選択のショートカット">
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Alt</kbd>+<kbd>Click</kbd></dt>
+                    <dd class="shortcut-desc">カーソルを挿入</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>↑</kbd> / <kbd>↓</kbd></dt>
+                    <dd class="shortcut-desc">上/下にカーソルを挿入</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>U</kbd></dt>
+                    <dd class="shortcut-desc">直前のカーソル操作を元に戻す</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>I</kbd></dt>
+                    <dd class="shortcut-desc">選択した各行の末尾にカーソルを挿入</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>L</kbd></dt>
+                    <dd class="shortcut-desc">現在の行を選択</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>L</kbd></dt>
+                    <dd class="shortcut-desc">現在の選択のすべての出現箇所を選択</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>F2</kbd></dt>
+                    <dd class="shortcut-desc">現在の単語のすべての出現箇所を選択</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>→</kbd></dt>
+                    <dd class="shortcut-desc">選択を展開</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>←</kbd></dt>
+                    <dd class="shortcut-desc">選択を縮小</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Shift</kbd>+<kbd>Alt</kbd>+ドラッグ</dt>
+                    <dd class="shortcut-desc">列（ボックス）選択</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Alt</kbd>+矢印キー</dt>
+                    <dd class="shortcut-desc">列（ボックス）選択</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>PgUp/PgDn</kbd></dt>
+                    <dd class="shortcut-desc">列（ボックス）選択ページアップ/ダウン</dd>
+                </div>
+            </dl>
         </section>
 
-        <!-- リッチ言語編集 -->
-        <section class="category">
-            <h2 class="category-title">リッチ言語編集</h2>
-            <table class="shortcut-table" role="table" aria-label="リッチ言語編集のショートカット">
-                <tbody>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール スペースで候補をトリガー">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Space</kbd></td>
-                        <td class="shortcut-desc">候補をトリガー</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール シフト スペースでパラメーターヒントをトリガー">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Space</kbd></td>
-                        <td class="shortcut-desc">パラメーターヒントをトリガー</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="シフト オルト エフでドキュメントをフォーマット">
-                        <td class="shortcut-key"><kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>F</kbd></td>
-                        <td class="shortcut-desc">ドキュメントをフォーマット</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="F12で定義に移動">
-                        <td class="shortcut-key"><kbd>F12</kbd></td>
-                        <td class="shortcut-desc">定義に移動</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="オルト F12で定義をピーク">
-                        <td class="shortcut-key"><kbd>Alt</kbd>+<kbd>F12</kbd></td>
-                        <td class="shortcut-desc">定義をピーク</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール ピリオドでクイックフィックス">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>.</kbd></td>
-                        <td class="shortcut-desc">クイックフィックス</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="シフト F12で参照を表示">
-                        <td class="shortcut-key"><kbd>Shift</kbd>+<kbd>F12</kbd></td>
-                        <td class="shortcut-desc">参照を表示</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="F2でシンボルの名前を変更">
-                        <td class="shortcut-key"><kbd>F2</kbd></td>
-                        <td class="shortcut-desc">シンボルの名前を変更</td>
-                    </tr>
-                </tbody>
-            </table>
+        <!-- コード編集支援 -->
+        <section class="category" id="category-code-editing">
+            <h2 class="category-title">コード編集支援</h2>
+            <dl class="shortcut-list flex-layout" aria-label="コード編集支援のショートカット">
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Space</kbd>, <kbd>Ctrl</kbd>+<kbd>I</kbd></dt>
+                    <dd class="shortcut-desc">候補をトリガー</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Space</kbd></dt>
+                    <dd class="shortcut-desc">パラメーターヒントをトリガー</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>F</kbd></dt>
+                    <dd class="shortcut-desc">ドキュメントを整形</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>Ctrl</kbd>+<kbd>F</kbd></dt>
+                    <dd class="shortcut-desc">選択範囲を整形</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>F12</kbd></dt>
+                    <dd class="shortcut-desc">定義に移動</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Alt</kbd>+<kbd>F12</kbd></dt>
+                    <dd class="shortcut-desc">定義をピーク</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>F12</kbd></dt>
+                    <dd class="shortcut-desc">定義をサイドで開く</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>.</kbd></dt>
+                    <dd class="shortcut-desc">クイックフィックス</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Shift</kbd>+<kbd>F12</kbd></dt>
+                    <dd class="shortcut-desc">参照を表示</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>F2</kbd></dt>
+                    <dd class="shortcut-desc">シンボルの名前を変更</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>Ctrl</kbd>+<kbd>X</kbd></dt>
+                    <dd class="shortcut-desc">末尾の空白を削除</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>M</kbd></dt>
+                    <dd class="shortcut-desc">ファイル言語を変更</dd>
+                </div>
+            </dl>
         </section>
 
         <!-- エディター管理 -->
-        <section class="category">
+        <section class="category" id="category-editor-management">
             <h2 class="category-title">エディター管理</h2>
-            <table class="shortcut-table" role="table" aria-label="エディター管理のショートカット">
-                <tbody>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール ダブリューでエディターを閉じる">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>W</kbd></td>
-                        <td class="shortcut-desc">エディターを閉じる</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール バックスラッシュでエディターを分割">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>\</kbd></td>
-                        <td class="shortcut-desc">エディターを分割</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール 1、2、3でエディターグループにフォーカス">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>1</kbd> / <kbd>2</kbd> / <kbd>3</kbd></td>
-                        <td class="shortcut-desc">エディターグループにフォーカス</td>
-                    </tr>
-                </tbody>
-            </table>
+            <dl class="shortcut-list flex-layout" aria-label="エディター管理のショートカット">
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>F4</kbd>, <kbd>Ctrl</kbd>+<kbd>W</kbd></dt>
+                    <dd class="shortcut-desc">エディターを閉じる</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>F</kbd></dt>
+                    <dd class="shortcut-desc">フォルダーを閉じる</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>\</kbd></dt>
+                    <dd class="shortcut-desc">エディターを分割</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>1</kbd> / <kbd>2</kbd> / <kbd>3</kbd></dt>
+                    <dd class="shortcut-desc">1番目、2番目、3番目のエディターグループにフォーカス</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>Ctrl</kbd>+<kbd>←</kbd>/<kbd>→</kbd></dt>
+                    <dd class="shortcut-desc">前/次のエディターグループにフォーカス</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>PgUp</kbd> / <kbd>PgDn</kbd></dt>
+                    <dd class="shortcut-desc">エディターを左/右に移動</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>←</kbd> / <kbd>→</kbd></dt>
+                    <dd class="shortcut-desc">アクティブエディターグループを移動</dd>
+                </div>
+            </dl>
         </section>
 
         <!-- ファイル管理 -->
-        <section class="category">
+        <section class="category" id="category-file-management">
             <h2 class="category-title">ファイル管理</h2>
-            <table class="shortcut-table" role="table" aria-label="ファイル管理のショートカット">
-                <tbody>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール エヌで新しいファイル">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>N</kbd></td>
-                        <td class="shortcut-desc">新しいファイル</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール オーでファイルを開く">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>O</kbd></td>
-                        <td class="shortcut-desc">ファイルを開く</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール エスで保存">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>S</kbd></td>
-                        <td class="shortcut-desc">保存</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール シフト エスで名前を付けて保存">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd></td>
-                        <td class="shortcut-desc">名前を付けて保存</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール タブで次のエディターを開く">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Tab</kbd></td>
-                        <td class="shortcut-desc">次のエディターを開く</td>
-                    </tr>
-                </tbody>
-            </table>
+            <dl class="shortcut-list flex-layout" aria-label="ファイル管理のショートカット">
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>N</kbd></dt>
+                    <dd class="shortcut-desc">新しいファイル</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>O</kbd></dt>
+                    <dd class="shortcut-desc">ファイルを開く...</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>S</kbd></dt>
+                    <dd class="shortcut-desc">保存</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd></dt>
+                    <dd class="shortcut-desc">名前を付けて保存...</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>S</kbd></dt>
+                    <dd class="shortcut-desc">すべて保存</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>F4</kbd></dt>
+                    <dd class="shortcut-desc">閉じる</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>Ctrl</kbd>+<kbd>W</kbd></dt>
+                    <dd class="shortcut-desc">すべて閉じる</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd></dt>
+                    <dd class="shortcut-desc">閉じたエディターを再度開く</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>Enter</kbd></dt>
+                    <dd class="shortcut-desc">プレビューモードエディターを開いたままにする</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Tab</kbd></dt>
+                    <dd class="shortcut-desc">次を開く</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Tab</kbd></dt>
+                    <dd class="shortcut-desc">前を開く</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>P</kbd></dt>
+                    <dd class="shortcut-desc">アクティブファイルのパスをコピー</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>R</kbd></dt>
+                    <dd class="shortcut-desc">アクティブファイルをエクスプローラーで表示</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>O</kbd></dt>
+                    <dd class="shortcut-desc">アクティブファイルを新しいウィンドウ/インスタンスで表示</dd>
+                </div>
+            </dl>
         </section>
 
-        <!-- 表示・デバッグ・ターミナル -->
-        <section class="category">
-            <h2 class="category-title">表示・デバッグ・ターミナル</h2>
-            <table class="shortcut-table" role="table" aria-label="表示・デバッグ・ターミナルのショートカット">
-                <tbody>
-                    <tr class="shortcut-row" tabindex="0" aria-label="F11でフルスクリーン切り替え">
-                        <td class="shortcut-key"><kbd>F11</kbd></td>
-                        <td class="shortcut-desc">フルスクリーン切り替え</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール ビーでサイドバー表示切り替え">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>B</kbd></td>
-                        <td class="shortcut-desc">サイドバー表示切り替え</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール シフト イーでエクスプローラーを表示">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd></td>
-                        <td class="shortcut-desc">エクスプローラーを表示</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="F9でブレークポイント切り替え">
-                        <td class="shortcut-key"><kbd>F9</kbd></td>
-                        <td class="shortcut-desc">ブレークポイント切り替え</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="F5でデバッグ開始または続行">
-                        <td class="shortcut-key"><kbd>F5</kbd></td>
-                        <td class="shortcut-desc">デバッグ開始/続行</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="F10でステップオーバー">
-                        <td class="shortcut-key"><kbd>F10</kbd></td>
-                        <td class="shortcut-desc">ステップオーバー</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール バッククォートで統合ターミナルを表示">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>`</kbd></td>
-                        <td class="shortcut-desc">統合ターミナルを表示</td>
-                    </tr>
-                    <tr class="shortcut-row" tabindex="0" aria-label="コントロール シフト バッククォートで新しいターミナルを作成">
-                        <td class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>`</kbd></td>
-                        <td class="shortcut-desc">新しいターミナルを作成</td>
-                    </tr>
-                </tbody>
-            </table>
+        <!-- 表示 -->
+        <section class="category" id="category-display">
+            <h2 class="category-title">表示</h2>
+            <dl class="shortcut-list flex-layout" aria-label="表示のショートカット">
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>F11</kbd></dt>
+                    <dd class="shortcut-desc">フルスクリーン切り替え</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>0</kbd></dt>
+                    <dd class="shortcut-desc">エディターレイアウト切り替え（水平/垂直）</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>=</kbd> / <kbd>-</kbd></dt>
+                    <dd class="shortcut-desc">ズームイン/アウト</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>B</kbd></dt>
+                    <dd class="shortcut-desc">サイドバー表示切り替え</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd></dt>
+                    <dd class="shortcut-desc">エクスプローラーを表示/フォーカス切り替え</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd></dt>
+                    <dd class="shortcut-desc">検索を表示</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd></dt>
+                    <dd class="shortcut-desc">ソース管理を表示</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd></dt>
+                    <dd class="shortcut-desc">デバッグを表示</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd></dt>
+                    <dd class="shortcut-desc">拡張機能を表示</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>H</kbd></dt>
+                    <dd class="shortcut-desc">ファイル内置換</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></dt>
+                    <dd class="shortcut-desc">検索詳細切り替え</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>U</kbd></dt>
+                    <dd class="shortcut-desc">出力パネルを表示</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd></dt>
+                    <dd class="shortcut-desc">マークダウンプレビューを開く</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>V</kbd></dt>
+                    <dd class="shortcut-desc">マークダウンプレビューをサイドで開く</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>Z</kbd></dt>
+                    <dd class="shortcut-desc">Zenモード（Esc Escで終了）</dd>
+                </div>
+            </dl>
+        </section>
+
+        <!-- デバッグ -->
+        <section class="category" id="category-debug">
+            <h2 class="category-title">デバッグ</h2>
+            <dl class="shortcut-list flex-layout" aria-label="デバッグのショートカット">
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>F9</kbd></dt>
+                    <dd class="shortcut-desc">ブレークポイント切り替え</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>F5</kbd></dt>
+                    <dd class="shortcut-desc">デバッグ開始/続行</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Shift</kbd>+<kbd>F5</kbd></dt>
+                    <dd class="shortcut-desc">デバッグ停止</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>F11</kbd> / <kbd>Shift</kbd>+<kbd>F11</kbd></dt>
+                    <dd class="shortcut-desc">ステップイン/アウト</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>F10</kbd></dt>
+                    <dd class="shortcut-desc">ステップオーバー</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>Ctrl</kbd>+<kbd>I</kbd></dt>
+                    <dd class="shortcut-desc">ホバーを表示</dd>
+                </div>
+            </dl>
+        </section>
+
+        <!-- 統合ターミナル -->
+        <section class="category" id="category-terminal">
+            <h2 class="category-title">統合ターミナル</h2>
+            <dl class="shortcut-list flex-layout" aria-label="統合ターミナルのショートカット">
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>`</kbd></dt>
+                    <dd class="shortcut-desc">統合ターミナルを表示</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>`</kbd></dt>
+                    <dd class="shortcut-desc">新しいターミナルを作成</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>C</kbd></dt>
+                    <dd class="shortcut-desc">選択をコピー</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>V</kbd></dt>
+                    <dd class="shortcut-desc">アクティブターミナルに貼り付け</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>↑</kbd> / <kbd>↓</kbd></dt>
+                    <dd class="shortcut-desc">スクロールアップ/ダウン</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Shift</kbd>+<kbd>PgUp</kbd> / <kbd>PgDn</kbd></dt>
+                    <dd class="shortcut-desc">ページアップ/ダウンスクロール</dd>
+                </div>
+                <div class="shortcut-item" tabindex="0">
+                    <dt class="shortcut-key"><kbd>Ctrl</kbd>+<kbd>Home</kbd> / <kbd>End</kbd></dt>
+                    <dd class="shortcut-desc">先頭/末尾にスクロール</dd>
+                </div>
+            </dl>
         </section>
     </main>
 
     <footer>
-        Visual Studio Code (VS Code) Windows キーボードショートカット
+        Visual Studio Code キーボードショートカット一覧（Windows版）
     </footer>
 
     <!-- 外部JavaScriptファイルの読み込み -->
