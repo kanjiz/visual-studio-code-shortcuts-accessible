@@ -211,7 +211,8 @@ footer {
     border-radius: 8px;
 }
 
-/* フォーカス管理の改善 */
+
+
 .shortcut-row[tabindex="0"] {
     cursor: pointer;
     position: relative;
@@ -271,4 +272,68 @@ footer {
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
     }
+}
+
+/* Flexbox版の実験用スタイル（全般セクションのみ） */
+.shortcut-list.flex-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-collapse: initial;
+    border-spacing: initial;
+}
+
+.shortcut-list.flex-layout .shortcut-item {
+    display: flex;
+    align-items: stretch;
+    transition: all 0.2s ease;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+}
+
+.shortcut-list.flex-layout .shortcut-item:hover {
+    background-color: var(--hover-bg);
+    border-color: var(--border-color);
+}
+
+.shortcut-list.flex-layout .shortcut-item:focus {
+    background-color: var(--hover-bg);
+    outline: 4px solid var(--focus-color);
+    outline-offset: 2px;
+    border-color: var(--focus-color);
+    z-index: 1;
+}
+
+.shortcut-list.flex-layout .shortcut-key {
+    display: block;
+    flex: 0 0 auto;
+    min-width: 50%;
+    max-width: 70%;
+    font-family: "BIZ UDGothic", "Consolas", "SF Mono", "Monaco", monospace;
+    font-size: 24px;
+    font-weight: bold;
+    background: var(--code-bg);
+    color: var(--code-color);
+    padding: 16px 20px;
+    border-radius: 8px;
+    white-space: nowrap;
+    vertical-align: top;
+    border: 2px solid var(--border-color);
+    margin: 0;
+}
+
+.shortcut-list.flex-layout .shortcut-desc {
+    display: block;
+    flex: 1;
+    font-size: 24px;
+    padding: 16px 20px;
+    vertical-align: top;
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 0;
 }
